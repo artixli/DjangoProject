@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site web</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1> bienvenue sur mon site</h1>
+        <h2>Aujourd'hui nous somme le {{ date|date:"d F Y H:i:s" }}</h2><!--jour moi anne-->
+        <h3>Il est actuellement {{date|date:"H\hi"}}</h3>
+    </div>
+<script src = "index.js"></script>
+</body>
+
+</html>
